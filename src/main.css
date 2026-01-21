@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.h1-title {
+  @apply text-7xl font-bold mt-10 text-center;
+}
