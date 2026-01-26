@@ -1,5 +1,7 @@
+import Layout from "./components/Layout";
+
 function App() {
-  return <h1 className="h1-title">Portfolio</h1>;
+  return <Layout></Layout>;
 }
 
 export default App;
