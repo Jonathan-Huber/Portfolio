@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Header from "./Header";
 
 function Layout({ children }) {
@@ -5,6 +6,7 @@ function Layout({ children }) {
     <>
       <Header />
       <main className="w-full">{children}</main>
+      <Footer />
     </>
   );
 }
