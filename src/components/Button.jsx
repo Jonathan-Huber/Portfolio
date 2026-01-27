@@ -4,8 +4,10 @@ function Button({
   variant = "primary",
   size = "normal",
   type = "button",
+  className = "",
 }) {
-  const className = `btn btn-${size} btn-${variant} `;
+  const baseClass = `btn btn-${size} btn-${variant} `;
+  const finalClassName = `${baseClass} ${className}`;
 
   // Si href est fourni → lien
   if (href) {
@@ -15,7 +17,7 @@ function Button({
     return (
       <a
         href={href}
-        className={className}
+        className={finalClassName}
         target={isExternal ? "_blank" : undefined}
         rel={isExternal ? "noopener noreferrer" : undefined}
       >
@@ -26,7 +28,7 @@ function Button({
 
   // Sinon → vrai bouton
   return (
-    <button type={type} className={className}>
+    <button type={type} className={finalClassName}>
       {children}
     </button>
   );
