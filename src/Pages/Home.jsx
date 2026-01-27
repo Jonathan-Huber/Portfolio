@@ -9,7 +9,7 @@ function Home() {
         className="bg-gray-50 py-8 lg:py-12 lg:flex lg:items-center"
       >
         {/* Container */}
-        <div className="max-w-6xl mx-auto px-6 w-full">
+        <div className="container mx-auto px-6">
           <h2>Mes projets</h2>
           <ProjectGallery />
         </div>

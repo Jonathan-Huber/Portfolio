@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section className="bg-cyan-50 py-8 lg:py-26 lg:flex lg:items-center">
       {/* Container */}
-      <div className="max-w-6xl mx-auto px-6 pt-16 w-full">
+      <div className="container mx-auto px-6 xl:px-48 pt-16">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between text-center md:text-left">
           {/* Texte */}
           <div className="md:w-1/2">

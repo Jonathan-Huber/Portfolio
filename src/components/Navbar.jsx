@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState("/"); // lien actif par défaut
+  const [active, setActive] = useState("/");
 
   const links = [
     { href: "/", label: "Accueil" },
@@ -14,7 +14,7 @@ function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <span className="text-xl text-cyan-600 font-heading font-bold border border-cyan-800 px-2 py-1.5 ">
