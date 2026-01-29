@@ -2,7 +2,6 @@ import { useState } from "react";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState("/");
 
   const links = [
     { href: "/", label: "Accueil" },
@@ -51,12 +50,7 @@ function Navbar() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  onClick={() => setActive(link.href)}
-                  className={`inline-block transition-transform duration-200 ${
-                    active === link.href
-                      ? "text-black border-b-2 border-cyan-600"
-                      : "text-black hover:text-cyan-800 hover:scale-110"
-                  }`}
+                  className="inline-block transition-transform duration-200"
                 >
                   {link.label}
                 </a>
@@ -79,13 +73,8 @@ function Navbar() {
                 href={link.href}
                 onClick={() => {
                   setOpen(false);
-                  setActive(link.href);
                 }}
-                className={`inline-block transition-transform duration-200 ${
-                  active === link.href
-                    ? "text-black border-b-2 border-cyan-600"
-                    : "text-black hover:text-cyan-800 hover:scale-110"
-                }`}
+                className="inline-block transition-transform duration-200"
               >
                 {link.label}
               </a>
