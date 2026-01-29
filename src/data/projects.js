@@ -1,5 +1,15 @@
 // src/data/projects.js
 
+const images = import.meta.glob(
+  "../assets/images/projects/**/*.{jpg,jpeg,png,webp}",
+  {
+    eager: true,
+    import: "default",
+  },
+);
+
+const getImage = (path) => images[`../assets/images/projects/${path}`];
+
 const projects = [
   {
     id: 1,
@@ -19,16 +29,19 @@ const projects = [
       "Projet réalisé dans le cadre de la formation Intégrateur Web chez OpenClassrooms.",
     stack: ["HTML", "CSS", "Figma"],
     cover: {
-      src: "/images/riding-cities/cover.png",
-      srcSet:
-        "/images/riding-cities/cover.png 320w, /images/riding-cities/cover.png 640w, /images/riding-cities/cover.png 960w",
+      src: getImage("riding-cities/cover.png"),
+      // srcSet: `
+      //   ${getImage("riding-cities/cover-320.png")} 320w,
+      //   ${getImage("riding-cities/cover-640.png")} 640w,
+      //   ${getImage("riding-cities/cover-960.png")} 960w
+      // `,
       sizes: "(min-width: 768px) 33vw, 100vw",
       alt: "Page d'accueil du site Riding Cities",
     },
     gallery: [
       {
-        src: "/images/riding-cities/1.png",
-        srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
+        src: getImage("riding-cities/1.png"),
+        // srcSet: "Versions responsives de cette image",
         alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
       },
       //     {
@@ -57,21 +70,20 @@ const projects = [
       "Projet réalisé dans le cadre de ma formation intégrateur web chez OpenClassrooms.",
     stack: ["HTML", "CSS", "Figma", "VSCode"],
     cover: {
-      src: "/images/booki/cover.png",
-      srcSet:
-        "/images/booki/cover.png 320w, /images/booki/cover.png 640w, /images/booki/cover.png 960w",
+      src: getImage("booki/cover.png"),
+      // srcSet: "Versions responsives de cette image",
       sizes: "(min-width: 768px) 33vw, 100vw",
       alt: "Page d'accueil du site Booki",
     },
     gallery: [
       {
-        src: "/images/booki/1.png",
-        srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
+        src: getImage("booki/1.png"),
+        // srcSet: "Versions responsives de cette image",
         alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
       },
       {
-        src: "/images/booki/2.png",
-        srcSet: "Versions responsives de cette image",
+        src: getImage("booki/2.png"),
+        // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
     ],
@@ -96,20 +108,19 @@ const projects = [
       "Projet réalisé dans le cadre de ma formation intégrateur web chez OpenClassrooms.",
     stack: ["HTML", "CSS", "Sass", "Git", "GitHub"],
     cover: {
-      src: "/images/ohmyfood/cover.png",
-      srcSet:
-        "/images/ohmyfood/cover.png 320w, /images/ohmyfood/cover.png 640w, /images/ohmyfood/cover.png 960w",
+      src: getImage("ohmyfood/cover.png"),
+      // srcSet: "Versions responsives de cette image",
       sizes: "(min-width: 768px) 33vw, 100vw",
       alt: "Page d'accueil du site Ohmyfood",
     },
     gallery: [
       {
-        src: "/images/ohmyfood/1.png",
-        // srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
+        src: getImage("ohmyfood/1.png"),
+        // srcSet: "Versions responsives de cette image",
         alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
       },
       {
-        src: "/images/ohmyfood/2.png",
+        src: getImage("ohmyfood/2.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
@@ -146,45 +157,44 @@ const projects = [
       "Figma",
     ],
     cover: {
-      src: "/images/sophie-bluel/cover.png",
-      // srcSet:
-      //   "/images/sophie-bluel_3-2.png 320w, /images/sophie-bluel_3-2.png 640w, /images/sophie-bluel_3-2.png 960w",
+      src: getImage("sophie-bluel/cover.png"),
+      // srcSet: "Versions responsives de cette image",
       sizes: "(min-width: 768px) 33vw, 100vw",
       alt: "Page d'accueil du portfolio de Sophie Bluel",
     },
     gallery: [
       {
-        src: "/images/sophie-bluel/1.png",
-        // srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
+        src: getImage("sophie-bluel/1.png"),
+        // srcSet: "Versions responsives de cette image",
         alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
       },
       {
-        src: "/images/sophie-bluel/2.png",
+        src: getImage("sophie-bluel/2.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
       {
-        src: "/images/sophie-bluel/3.png",
+        src: getImage("sophie-bluel/3.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
       {
-        src: "/images/sophie-bluel/4.png",
+        src: getImage("sophie-bluel/4.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
       {
-        src: "/images/sophie-bluel/5.png",
+        src: getImage("sophie-bluel/5.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
       {
-        src: "/images/sophie-bluel/6.png",
+        src: getImage("sophie-bluel/6.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
       {
-        src: "/images/sophie-bluel/7.png",
+        src: getImage("sophie-bluel/7.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
@@ -212,25 +222,24 @@ const projects = [
       "Projet réalisé dans le cadre de ma formation intégrateur web chez OpenClassrooms.",
     stack: ["React", "React Router", "SASS", "Vite", "JavaScript"],
     cover: {
-      src: "/images/kasa/cover.png",
-      // srcSet:
-      //   // "/images/kasa_3-2.png 320w, /images/kasa_3-2.png 640w, /images/kasa_3-2.png 960w",
+      src: getImage("kasa/cover.png"),
+      // srcSet:"Versions responsives de cette image",
       sizes: "(min-width: 768px) 33vw, 100vw",
       alt: "Page d'accueil du site Kasa",
     },
     gallery: [
       {
-        src: "/images/kasa/1.png",
-        // srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
+        src: getImage("kasa/1.png"),
+        // srcSet: "Versions responsives de cette image",
         alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
       },
       {
-        src: "/images/kasa/2.png",
+        src: getImage("kasa/2.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
       {
-        src: "/images/kasa/3.png",
+        src: getImage("kasa/3.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
@@ -266,35 +275,34 @@ const projects = [
       "Accessibilité",
     ],
     cover: {
-      src: "/images/nina-carducci/cover.png",
-      // srcSet:
-      //   "/images/nina-carducci_3-2.png 320w, /images/nina-carducci_3-2.png 640w, /images/nina-carducci_3-2.png 960w",
+      src: getImage("nina-carducci/cover.png"),
+      // srcSet: "Versions responsives de cette image",
       sizes: "(min-width: 768px) 33vw, 100vw",
       alt: "Page d'accueil du portfolio de Nina Carducci",
     },
     gallery: [
       {
-        src: "/images/nina-carducci/1.png",
-        // srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
+        src: getImage("nina-carducci/1.png"),
+        // srcSet: "Versions responsives de cette image",
         alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
       },
       {
-        src: "/images/nina-carducci/2.png",
+        src: getImage("nina-carducci/2.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
       {
-        src: "/images/nina-carducci/3.png",
+        src: getImage("nina-carducci/3.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
       {
-        src: "/images/nina-carducci/4.png",
+        src: getImage("nina-carducci/4.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
       {
-        src: "/images/nina-carducci/5.png",
+        src: getImage("nina-carducci/5.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
@@ -322,25 +330,24 @@ const projects = [
       "Projet réalisé dans le cadre de ma formation intégrateur web chez OpenClassrooms.",
     stack: ["React", "JavaScript", "Node.js", "Yarn", "Git"],
     cover: {
-      src: "/images/724events/cover.png",
-      // srcSet:
-      //   "/images/724events_3-2.png 320w, /images/724events_3-2.png 640w, /images/724events_3-2.png 960w",
+      src: getImage("724events/cover.png"),
+      // srcSet: "Versions responsives de cette image",
       sizes: "(min-width: 768px) 33vw, 100vw",
       alt: "Page d'accueil du site 724events",
     },
     gallery: [
       {
-        src: "/images/724events/1.png",
-        // srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
+        src: getImage("724events/1.png"),
+        // srcSet: "Versions responsives de cette image",
         alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
       },
       {
-        src: "/images/724events/2.png",
+        src: getImage("724events/2.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
       {
-        src: "/images/724events/3.png",
+        src: getImage("724events/3.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
@@ -366,50 +373,49 @@ const projects = [
       "Projet réalisé dans le cadre de ma formation intégrateur web chez OpenClassrooms.",
     stack: ["React", "Redux", "React Router", "JavaScript", "Swagger"],
     cover: {
-      src: "/images/argent-bank/cover.png",
-      // srcSet:
-      //   "/images/argent-bank/cover.png 320w, /images/argent-bank/cover.png 640w, /images/argent-bank/cover.png 960w",
+      src: getImage("argent-bank/cover.png"),
+      // srcSet: "Versions responsives de cette image",
       sizes: "(min-width: 768px) 33vw, 100vw",
       alt: "Page d'accueil du site Argent Bank",
     },
     gallery: [
       {
-        src: "/images/argent-bank/1.png",
-        // srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
+        src: getImage("argent-bank/1.png"),
+        // srcSet: "Versions responsives de cette image",
         alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
       },
       {
-        src: "/images/argent-bank/2.png",
+        src: getImage("argent-bank/2.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
       {
-        src: "/images/argent-bank/3.png",
+        src: getImage("argent-bank/3.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
       {
-        src: "/images/argent-bank/4.png",
+        src: getImage("argent-bank/4.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
       {
-        src: "/images/argent-bank/5.png",
-        // srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
+        src: getImage("argent-bank/5.png"),
+        // srcSet: "Versions responsives de cette image",
         alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
       },
       {
-        src: "/images/argent-bank/6.png",
+        src: getImage("argent-bank/6.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
       {
-        src: "/images/argent-bank/7.png",
+        src: getImage("argent-bank/7.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
       {
-        src: "/images/argent-bank/8.png",
+        src: getImage("argent-bank/8.png"),
         // srcSet: "Versions responsives de cette image",
         alt: "Description de cette seconde vue du projet",
       },
