@@ -19,24 +19,24 @@ const projects = [
       "Projet réalisé dans le cadre de la formation Intégrateur Web chez OpenClassrooms.",
     stack: ["HTML", "CSS", "Figma"],
     cover: {
-      src: "/images/riding-cities_3-2.png",
+      src: "/images/riding-cities/cover.png",
       srcSet:
-        "/images/riding-cities_3-2.png 320w, /images/riding-cities_3-2.png 640w, /images/riding-cities_3-2.png 960w",
+        "/images/riding-cities/cover.png 320w, /images/riding-cities/cover.png 640w, /images/riding-cities/cover.png 960w",
       sizes: "(min-width: 768px) 33vw, 100vw",
       alt: "Page d'accueil du site Riding Cities",
     },
-    //   gallery: [
-    //     {
-    //       src: "Chemin vers une image secondaire du projet (vue détail)",
-    //       srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
-    //       alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
-    //     },
-    //     {
-    //       src: "Chemin vers une autre image secondaire du projet",
-    //       srcSet: "Versions responsives de cette image",
-    //       alt: "Description de cette seconde vue du projet",
-    //     },
-    //   ],
+    gallery: [
+      {
+        src: "/images/riding-cities/1.png",
+        srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
+        alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
+      },
+      //     {
+      //       src: "Chemin vers une autre image secondaire du projet",
+      //       srcSet: "Versions responsives de cette image",
+      //       alt: "Description de cette seconde vue du projet",
+      //     },
+    ],
   },
 
   {
@@ -57,24 +57,24 @@ const projects = [
       "Projet réalisé dans le cadre de ma formation intégrateur web chez OpenClassrooms.",
     stack: ["HTML", "CSS", "Figma", "VSCode"],
     cover: {
-      src: "/images/booki_3-2.png",
+      src: "/images/booki/cover.png",
       srcSet:
-        "/images/booki_3-2.png 320w, /images/booki_3-2.png 640w, /images/booki_3-2.png 960w",
+        "/images/booki/cover.png 320w, /images/booki/cover.png 640w, /images/booki/cover.png 960w",
       sizes: "(min-width: 768px) 33vw, 100vw",
       alt: "Page d'accueil du site Booki",
     },
-    //   gallery: [
-    //     {
-    //       src: "Chemin vers une image secondaire du projet (vue détail)",
-    //       srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
-    //       alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
-    //     },
-    //     {
-    //       src: "Chemin vers une autre image secondaire du projet",
-    //       srcSet: "Versions responsives de cette image",
-    //       alt: "Description de cette seconde vue du projet",
-    //     },
-    //   ],
+    gallery: [
+      {
+        src: "/images/booki/1.png",
+        srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
+        alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
+      },
+      {
+        src: "/images/booki/2.png",
+        srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+    ],
   },
 
   {
@@ -96,24 +96,24 @@ const projects = [
       "Projet réalisé dans le cadre de ma formation intégrateur web chez OpenClassrooms.",
     stack: ["HTML", "CSS", "Sass", "Git", "GitHub"],
     cover: {
-      src: "/images/ohmyfood_3-2.png",
+      src: "/images/ohmyfood/cover.png",
       srcSet:
-        "/images/ohmyfood_3-2.png 320w, /images/ohmyfood_3-2.png 640w, /images/ohmyfood_3-2.png 960w",
+        "/images/ohmyfood/cover.png 320w, /images/ohmyfood/cover.png 640w, /images/ohmyfood/cover.png 960w",
       sizes: "(min-width: 768px) 33vw, 100vw",
       alt: "Page d'accueil du site Ohmyfood",
     },
-    //   gallery: [
-    //     {
-    //       src: "Chemin vers une image secondaire du projet (vue détail)",
-    //       srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
-    //       alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
-    //     },
-    //     {
-    //       src: "Chemin vers une autre image secondaire du projet",
-    //       srcSet: "Versions responsives de cette image",
-    //       alt: "Description de cette seconde vue du projet",
-    //     },
-    //   ],
+    gallery: [
+      {
+        src: "/images/ohmyfood/1.png",
+        // srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
+        alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
+      },
+      {
+        src: "/images/ohmyfood/2.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+    ],
     liveLink: "https://jonathan-huber.github.io/oh-my-food/",
     repoLink: "https://github.com/Jonathan-Huber/oh-my-food",
   },
@@ -146,24 +146,49 @@ const projects = [
       "Figma",
     ],
     cover: {
-      src: "/images/sophie-bluel_3-2.png",
-      srcSet:
-        "/images/sophie-bluel_3-2.png 320w, /images/sophie-bluel_3-2.png 640w, /images/sophie-bluel_3-2.png 960w",
+      src: "/images/sophie-bluel/cover.png",
+      // srcSet:
+      //   "/images/sophie-bluel_3-2.png 320w, /images/sophie-bluel_3-2.png 640w, /images/sophie-bluel_3-2.png 960w",
       sizes: "(min-width: 768px) 33vw, 100vw",
       alt: "Page d'accueil du portfolio de Sophie Bluel",
     },
-    //   gallery: [
-    //     {
-    //       src: "Chemin vers une image secondaire du projet (vue détail)",
-    //       srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
-    //       alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
-    //     },
-    //     {
-    //       src: "Chemin vers une autre image secondaire du projet",
-    //       srcSet: "Versions responsives de cette image",
-    //       alt: "Description de cette seconde vue du projet",
-    //     },
-    //   ],
+    gallery: [
+      {
+        src: "/images/sophie-bluel/1.png",
+        // srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
+        alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
+      },
+      {
+        src: "/images/sophie-bluel/2.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+      {
+        src: "/images/sophie-bluel/3.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+      {
+        src: "/images/sophie-bluel/4.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+      {
+        src: "/images/sophie-bluel/5.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+      {
+        src: "/images/sophie-bluel/6.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+      {
+        src: "/images/sophie-bluel/7.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+    ],
     repoLink:
       "https://github.com/Jonathan-Huber/portfolio-architecte-sophie-bluel",
   },
@@ -187,24 +212,29 @@ const projects = [
       "Projet réalisé dans le cadre de ma formation intégrateur web chez OpenClassrooms.",
     stack: ["React", "React Router", "SASS", "Vite", "JavaScript"],
     cover: {
-      src: "/images/kasa_3-2.png",
-      srcSet:
-        "/images/kasa_3-2.png 320w, /images/kasa_3-2.png 640w, /images/kasa_3-2.png 960w",
+      src: "/images/kasa/cover.png",
+      // srcSet:
+      //   // "/images/kasa_3-2.png 320w, /images/kasa_3-2.png 640w, /images/kasa_3-2.png 960w",
       sizes: "(min-width: 768px) 33vw, 100vw",
       alt: "Page d'accueil du site Kasa",
     },
-    //   gallery: [
-    //     {
-    //       src: "Chemin vers une image secondaire du projet (vue détail)",
-    //       srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
-    //       alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
-    //     },
-    //     {
-    //       src: "Chemin vers une autre image secondaire du projet",
-    //       srcSet: "Versions responsives de cette image",
-    //       alt: "Description de cette seconde vue du projet",
-    //     },
-    //   ],
+    gallery: [
+      {
+        src: "/images/kasa/1.png",
+        // srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
+        alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
+      },
+      {
+        src: "/images/kasa/2.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+      {
+        src: "/images/kasa/3.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+    ],
     repoLink: "https://github.com/Jonathan-Huber/Kasa",
   },
 
@@ -225,7 +255,7 @@ const projects = [
     },
     context:
       "Projet réalisé dans le cadre de ma formation intégrateur web chez OpenClassrooms.",
-    stacks: [
+    stack: [
       "HTML",
       "CSS",
       "JavaScript",
@@ -236,24 +266,39 @@ const projects = [
       "Accessibilité",
     ],
     cover: {
-      src: "/images/nina-carducci_3-2.png",
-      srcSet:
-        "/images/nina-carducci_3-2.png 320w, /images/nina-carducci_3-2.png 640w, /images/nina-carducci_3-2.png 960w",
+      src: "/images/nina-carducci/cover.png",
+      // srcSet:
+      //   "/images/nina-carducci_3-2.png 320w, /images/nina-carducci_3-2.png 640w, /images/nina-carducci_3-2.png 960w",
       sizes: "(min-width: 768px) 33vw, 100vw",
       alt: "Page d'accueil du portfolio de Nina Carducci",
     },
-    //   gallery: [
-    //     {
-    //       src: "Chemin vers une image secondaire du projet (vue détail)",
-    //       srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
-    //       alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
-    //     },
-    //     {
-    //       src: "Chemin vers une autre image secondaire du projet",
-    //       srcSet: "Versions responsives de cette image",
-    //       alt: "Description de cette seconde vue du projet",
-    //     },
-    //   ],
+    gallery: [
+      {
+        src: "/images/nina-carducci/1.png",
+        // srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
+        alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
+      },
+      {
+        src: "/images/nina-carducci/2.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+      {
+        src: "/images/nina-carducci/3.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+      {
+        src: "/images/nina-carducci/4.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+      {
+        src: "/images/nina-carducci/5.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+    ],
     liveLink: "https://jonathan-huber.github.io/Nina-Carducci/",
     repoLink: "https://github.com/Jonathan-Huber/Nina-Carducci",
   },
@@ -266,7 +311,7 @@ const projects = [
     description: {
       short:
         "Débogage et finalisation d’un site one-page pour une agence événementielle, avec tests et cahier de recette.",
-      Long: [
+      long: [
         "En tant que développeur front-end freelance, j’ai été chargé de finaliser le développement d’un site one-page existant pour l’agence 724events. Mon rôle principal était d’identifier et résoudre les bugs persistants afin d’assurer une expérience utilisateur fluide et conforme aux attentes du client.",
         "Pour ce projet, j’ai utilisé React et JavaScript pour analyser et corriger le code, avec l’aide de React Developer Tools et Chrome DevTools pour tracer les problèmes. Les tests unitaires et d’intégration étant déjà présents, je les ai utilisés pour vérifier que chaque correction n’introduisait pas de régression.",
         "J’ai complété le cahier de recette existant, en documentant chaque bug corrigé et chaque test effectué. Cette démarche m’a permis de garantir la qualité et la fiabilité du site, tout en préparant un support de présentation pour la soutenance du projet.",
@@ -275,26 +320,31 @@ const projects = [
     },
     context:
       "Projet réalisé dans le cadre de ma formation intégrateur web chez OpenClassrooms.",
-    stacks: ["React", "JavaScript", "Node.js", "Yarn", "Git"],
+    stack: ["React", "JavaScript", "Node.js", "Yarn", "Git"],
     cover: {
-      src: "/images/724events_3-2.png",
-      srcSet:
-        "/images/724events_3-2.png 320w, /images/724events_3-2.png 640w, /images/724events_3-2.png 960w",
+      src: "/images/724events/cover.png",
+      // srcSet:
+      //   "/images/724events_3-2.png 320w, /images/724events_3-2.png 640w, /images/724events_3-2.png 960w",
       sizes: "(min-width: 768px) 33vw, 100vw",
       alt: "Page d'accueil du site 724events",
     },
-    //   gallery: [
-    //     {
-    //       src: "Chemin vers une image secondaire du projet (vue détail)",
-    //       srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
-    //       alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
-    //     },
-    //     {
-    //       src: "Chemin vers une autre image secondaire du projet",
-    //       srcSet: "Versions responsives de cette image",
-    //       alt: "Description de cette seconde vue du projet",
-    //     },
-    //   ],
+    gallery: [
+      {
+        src: "/images/724events/1.png",
+        // srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
+        alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
+      },
+      {
+        src: "/images/724events/2.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+      {
+        src: "/images/724events/3.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+    ],
     repoLink: "https://github.com/Jonathan-Huber/724-Events",
   },
   {
@@ -305,7 +355,7 @@ const projects = [
     description: {
       short:
         "Création du front-end bancaire avec React/Redux, intégration API et spécification des transactions dans Swagger.",
-      Long: [
+      long: [
         "Pour ce projet, j’ai développé l’interface utilisateur d’une application bancaire complète avec React, en suivant les maquettes fournies. L’application est responsive et sécurisée, et permet la gestion des comptes et transactions des utilisateurs.",
         "J’ai utilisé Redux pour gérer l’état global de l’application, garantissant la cohérence des données à travers les différents composants. React Router a été employé pour la navigation entre les pages et la gestion de l’authentification utilisateur.",
         "J’ai conçu et documenté dans Swagger les endpoints relatifs aux transactions, définissant leur structure et préparant leur intégration future côté back-end.",
@@ -314,27 +364,57 @@ const projects = [
     },
     context:
       "Projet réalisé dans le cadre de ma formation intégrateur web chez OpenClassrooms.",
-    stacks: ["React", "Redux", "React Router", "JavaScript", "Swagger"],
+    stack: ["React", "Redux", "React Router", "JavaScript", "Swagger"],
     cover: {
-      src: "/images/argent-bank_3-2.png",
-      srcSet:
-        "/images/argent-bank_3-2.png 320w, /images/argent-bank_3-2.png 640w, /images/argent-bank_3-2.png 960w",
+      src: "/images/argent-bank/cover.png",
+      // srcSet:
+      //   "/images/argent-bank/cover.png 320w, /images/argent-bank/cover.png 640w, /images/argent-bank/cover.png 960w",
       sizes: "(min-width: 768px) 33vw, 100vw",
       alt: "Page d'accueil du site Argent Bank",
     },
-    //   gallery: [
-    //     {
-    //       src: "Chemin vers une image secondaire du projet (vue détail)",
-    //       srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
-    //       alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
-    //     },
-    //     {
-    //       src: "Chemin vers une autre image secondaire du projet",
-    //       srcSet: "Versions responsives de cette image",
-    //       alt: "Description de cette seconde vue du projet",
-    //     },
-    //   ],
-    repoLink: "https://github.com/Jonathan-Huber/724-Events",
+    gallery: [
+      {
+        src: "/images/argent-bank/1.png",
+        // srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
+        alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
+      },
+      {
+        src: "/images/argent-bank/2.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+      {
+        src: "/images/argent-bank/3.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+      {
+        src: "/images/argent-bank/4.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+      {
+        src: "/images/argent-bank/5.png",
+        // srcSet: "Versions responsives de cette image (320w, 640w, 960w, etc.)",
+        alt: "Description de ce que montre l’image (page, fonctionnalité, section)",
+      },
+      {
+        src: "/images/argent-bank/6.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+      {
+        src: "/images/argent-bank/7.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+      {
+        src: "/images/argent-bank/8.png",
+        // srcSet: "Versions responsives de cette image",
+        alt: "Description de cette seconde vue du projet",
+      },
+    ],
+    repoLink: "https://github.com/Jonathan-Huber/ArgentBank-Frontend",
   },
 ];
 
