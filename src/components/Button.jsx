@@ -1,3 +1,6 @@
+import { Link } from "react-router";
+import { HashLink } from "react-router-hash-link";
+
 function Button({
   children,
   href,
@@ -13,13 +16,34 @@ function Button({
   if (href) {
     // Détecte si le lien est externe (http:// ou https://)
     const isExternal = href.startsWith("http");
+    // Détecte si le lien est une ancre
+    const isAnchor = href.startsWith("#");
 
+    // Ancre → <a>
+    if (isAnchor) {
+      return (
+        <HashLink smooth to={href} className={finalClassName}>
+          {children}
+        </HashLink>
+      );
+    }
+
+    // Liens internes → React Router Link
+    if (!isExternal) {
+      return (
+        <Link to={href} className={finalClassName}>
+          {children}
+        </Link>
+      );
+    }
+
+    // Liens externes → <a>
     return (
       <a
         href={href}
         className={finalClassName}
-        target={isExternal ? "_blank" : undefined}
-        rel={isExternal ? "noopener noreferrer" : undefined}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         {children}
       </a>
