@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { HashLink } from "react-router-hash-link";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -48,12 +49,22 @@ function Navbar() {
           <ul className="hidden md:flex gap-6">
             {links.map((link) => (
               <li key={link.href}>
-                <a
-                  href={link.href}
-                  className="inline-block transition-transform duration-200"
-                >
-                  {link.label}
-                </a>
+                {link.href.startsWith("/#") ? (
+                  <HashLink
+                    smooth
+                    to={link.href}
+                    className="inline-block transition-transform duration-200"
+                  >
+                    {link.label}
+                  </HashLink>
+                ) : (
+                  <a
+                    href={link.href}
+                    className="inline-block transition-transform duration-200"
+                  >
+                    {link.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
@@ -69,15 +80,26 @@ function Navbar() {
         <ul className="flex flex-col gap-4 px-4 py-4">
           {links.map((link) => (
             <li key={link.href}>
-              <a
-                href={link.href}
-                onClick={() => {
-                  setOpen(false);
-                }}
-                className="inline-block transition-transform duration-200"
-              >
-                {link.label}
-              </a>
+              {link.href.startsWith("/#") ? (
+                <HashLink
+                  smooth
+                  to={link.href}
+                  onClick={() => setOpen(false)}
+                  className="inline-block transition-transform duration-200"
+                >
+                  {link.label}
+                </HashLink>
+              ) : (
+                <a
+                  href={link.href}
+                  onClick={() => {
+                    setOpen(false);
+                  }}
+                  className="inline-block transition-transform duration-200"
+                >
+                  {link.label}
+                </a>
+              )}
             </li>
           ))}
         </ul>
