@@ -245,6 +245,7 @@ const projects = [
       },
     ],
     repoLink: "https://github.com/Jonathan-Huber/Kasa",
+    liveLink: "https://kasa-jonathan-huber.vercel.app/logement/46d188c5",
   },
 
   {
