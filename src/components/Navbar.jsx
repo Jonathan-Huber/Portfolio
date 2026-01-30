@@ -9,6 +9,7 @@ function Navbar() {
     { href: "/#projects", label: "Projets" },
     { href: "/#skills", label: "Skills" },
     { href: "/#about", label: "À propos" },
+    { href: "/#parcours", label: "Parcours" },
     { href: "/#contact", label: "Contact" },
   ];
 
