@@ -29,6 +29,17 @@ function Home() {
           <SkillsCloud />
         </div>
       </section>
+
+      {/* Section A propos */}
+      <section
+        id="about"
+        className="bg-gray-50 py-8 lg:py-20 lg:flex lg:items-center"
+      >
+        <div className="container mx-auto px-6">
+          <h2>À propos de moi</h2>
+          <About />
+        </div>
+      </section>
     </>
   );
 }
