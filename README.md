@@ -1,16 +1,57 @@
-# React + Vite
+# Portfolio – Jonathan Huber – Intégrateur Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+Ce dépôt contient mon portfolio d’intégrateur web, réalisé dans le cadre de ma formation **Intégrateur Web chez OpenClassrooms**.  
+Il présente une sélection de projets réalisés durant la formation, avec un focus sur l’intégration front-end, l’accessibilité, la performance et les bonnes pratiques modernes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Le portfolio a pour objectif de montrer :
 
-## React Compiler
+- ma capacité à intégrer des interfaces fidèles aux maquettes
+- ma maîtrise de React et de l’écosystème front moderne
+- ma rigueur sur la structure, le code et le versionnement
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Compétences issues de la formation OpenClassrooms
 
-## Expanding the ESLint configuration
+Compétences acquises lors de la formation **Intégrateur Web chez OpenClassrooms**, mises en œuvre à travers différents projets pédagogiques :
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Intégration HTML5 / CSS3 (Sass) responsive
+- JavaScript moderne (ES6+)
+- Développement d’interfaces avec React
+- Gestion de la navigation avec React Router
+- Gestion de l’état global (Redux Toolkit)
+- Consommation d’API REST
+- Accessibilité et bonnes pratiques front-end
+- Optimisation des performances
+- Versionnement avec Git et GitHub
+
+## Technologies utilisées pour ce portfolio
+
+- React (Vite)
+- JavaScript (ES6+)
+- HTML5 / CSS3
+- Tailwind CSS
+- React Router
+- Git / GitHub
+- Vercel
+
+## Statut
+
+- Portfolio en évolution continue
+- Formation **Intégrateur Web – OpenClassrooms** : en cours
+
+## Installation (développement local)
+
+```bash
+git clone https://github.com/Jonathan-Huber/Portfolio.git
+npm install
+npm run dev
+```
+
+## Démo
+
+En cours
+
+## Auteur
+
+Jonathan Huber
