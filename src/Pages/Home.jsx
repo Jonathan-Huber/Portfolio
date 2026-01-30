@@ -51,6 +51,17 @@ function Home() {
           <Journey />
         </div>
       </section>
+
+      {/* Section Contact */}
+      <section
+        id="contact"
+        className="bg-gray-50 py-8 lg:py-20 lg:flex lg:items-center"
+      >
+        <div className="container max-w-3xl mx-auto px-6">
+          <h2>Contact</h2>
+          <ContactForm />
+        </div>
+      </section>
     </>
   );
 }
