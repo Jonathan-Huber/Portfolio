@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { Navigate, useParams } from "react-router";
 import projects from "../data/projects";
 import Button from "../components/Button";
 import Carousel from "../components/Carousel";
@@ -7,7 +7,9 @@ export default function ProjectDetail() {
   const { slug } = useParams();
   const project = projects.find((p) => p.slug === slug);
 
-  if (!project) return <p>Projet introuvable</p>;
+  if (!project) {
+    return <Navigate to="*" replace />;
+  }
 
   const images = [project.cover, ...(project.gallery || [])];
 
