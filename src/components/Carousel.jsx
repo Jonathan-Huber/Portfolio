@@ -41,6 +41,8 @@ function Carousel({ images, projectTitle }) {
         <img
           src={images[currentIndex].src}
           alt={images[currentIndex].alt}
+          width={images[currentIndex].width}
+          height={images[currentIndex].height}
           className="w-full object-contain select-none"
         />
 

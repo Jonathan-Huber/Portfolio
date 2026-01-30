@@ -29,9 +29,11 @@ function Hero() {
           {/* Avatar / Illustration */}
           <div className="md:w-1/2 mb-6 lg:mb-0 flex justify-center lg:justify-end">
             <img
-              src="/images/avatar-480.webp"
+              src="/images/avatar-750.webp"
               srcSet="/images/avatar-320.webp 320w, /images/avatar-480.webp 480w, /images/avatar-750.webp 750w"
               sizes="(min-width: 768px) 288px, 256px"
+              width="750"
+              height="750"
               alt="Illustration Jonathan Huber"
               className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full object-cover ring-4 ring-black/20"
               fetchPriority="high"

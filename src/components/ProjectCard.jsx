@@ -7,6 +7,8 @@ export default function ProjectCard({ project }) {
       <div className="relative">
         <img
           src={project.cover.src}
+          width={project.cover.width}
+          height={project.cover.height}
           srcSet={project.cover.srcSet}
           sizes={project.cover.sizes}
           alt={project.cover.alt}
