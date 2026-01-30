@@ -40,6 +40,17 @@ function Home() {
           <About />
         </div>
       </section>
+
+      {/* Section Mon parcours */}
+      <section
+        id="parcours"
+        className="bg-cyan-50 py-8 lg:py-20 lg:flex lg:items-center"
+      >
+        <div className="container mx-auto px-6">
+          <h2>Parcours</h2>
+          <Journey />
+        </div>
+      </section>
     </>
   );
 }
