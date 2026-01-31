@@ -1,11 +1,17 @@
-import { Navigate, useParams } from "react-router";
+import { Navigate, useNavigate, useParams } from "react-router";
+import { useEffect } from "react";
 import projects from "../data/projects";
 import Button from "../components/Button";
 import Carousel from "../components/Carousel";
 
 export default function ProjectDetail() {
   const { slug } = useParams();
+  const navigate = useNavigate();
   const project = projects.find((p) => p.slug === slug);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!project) {
     return <Navigate to="*" replace />;
@@ -14,13 +20,22 @@ export default function ProjectDetail() {
   const images = [project.cover, ...(project.gallery || [])];
 
   return (
-    <div className="container mx-auto mt-18 p-4">
-      <div className="flex flex-col lg:flex-row gap-6 lg:mt-40">
-        {/* Texte à gauche */}
+    <div className="container mx-auto py-20 lg:py-28 px-4 2xl:px-10">
+      <div className="flex justify-center mb-12">
+        <Button
+          onClick={() => navigate(-1)}
+          size="sm"
+          className=""
+          aria-label="Retour à la page précédente"
+        >
+          Retour
+        </Button>
+      </div>
+      <div className="flex flex-col lg:flex-row gap-6">
         <div className="flex-1 flex flex-col gap-4">
           <h1 className="text-center lg:text-start">{project.title}</h1>
 
-          <div className="w-12 h-1 bg-cyan-600 my-2 mx-auto md:mx-0 rounded-full"></div>
+          <div className="w-12 h-1 bg-cyan-600 mx-auto lg:mx-0 rounded-full"></div>
 
           {project.description.long.map((paragraph, idx) => (
             <p key={idx}>{paragraph}</p>
@@ -37,7 +52,7 @@ export default function ProjectDetail() {
         </div>
 
         {/* Carrousel + stack + boutons */}
-        <div className="flex-1 lg:w-1/2 flex flex-col gap-4">
+        <div className="flex-1 lg:w-1/2 flex flex-col gap-6">
           <Carousel images={images} projectTitle={project.title} />
           {/* Stack */}
           {project.stack?.length > 0 && (
