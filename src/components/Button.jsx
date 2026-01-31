@@ -8,6 +8,7 @@ function Button({
   size = "normal",
   type = "button",
   className = "",
+  disabled = false,
 }) {
   const baseClass = `btn btn-${size} btn-${variant} `;
   const finalClassName = `${baseClass} ${className}`;
@@ -52,7 +53,7 @@ function Button({
 
   // Sinon → vrai bouton
   return (
-    <button type={type} className={finalClassName}>
+    <button type={type} className={finalClassName} disabled={disabled}>
       {children}
     </button>
   );
