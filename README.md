@@ -32,6 +32,8 @@ Compétences acquises lors de la formation **Intégrateur Web chez OpenClassroom
 - HTML5 / CSS3
 - Tailwind CSS
 - React Router
+- HashLink
+- EmailJS
 - Git / GitHub
 - Vercel
 
@@ -50,7 +52,7 @@ npm run dev
 
 ## Démo
 
-En cours
+[Voir la démo en ligne](https://portfolio-jonathan-huber.vercel.app/)
 
 ## Auteur
 
