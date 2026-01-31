@@ -13,6 +13,7 @@ export default function ProjectCard({ project }) {
           sizes={project.cover.sizes}
           alt={project.cover.alt}
           className="w-full object-cover"
+          loading="lazy"
         />
 
         {/* Overlay en bas avec effet dégradé */}
