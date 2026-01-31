@@ -51,7 +51,7 @@
   }
 
   .btn-secondary {
-    @apply border bg-cyan-50 border-cyan-700 text-cyan-700 hover:bg-cyan-700 hover:text-white;
+    @apply border border-cyan-700 text-cyan-700 hover:bg-cyan-700 hover:text-white;
   }
 
   /* Tailles */
