@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section className="min-h-screen bg-cyan-50 py-8 flex items-center">
       {/* Container */}
-      <div className="container mx-auto px-6 xl:px-48 pt-16">
+      <div className="container mx-auto px-6 xl:px-48 pt-14">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between text-center lg:text-left">
           {/* Texte */}
           <div className="lg:w-1/2">
@@ -27,7 +27,7 @@ function Hero() {
           </div>
 
           {/* Avatar / Illustration */}
-          <div className="md:w-1/2 mb-6 lg:mb-0 flex justify-center lg:justify-end">
+          <div className="md:w-1/2 mb-4 lg:mb-0 flex justify-center lg:justify-end">
             <img
               src="/images/avatar-750.webp"
               srcSet="/images/avatar-320.webp 320w, /images/avatar-480.webp 480w, /images/avatar-750.webp 750w"
