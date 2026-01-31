@@ -76,7 +76,7 @@ function Footer() {
             </svg>
           </a>
           <a
-            href="mailto:ton.email@gmail.com"
+            href="mailto:jonathan.huber.dev@gmail.com"
             aria-label="Gmail"
             title="Gmail"
             target="_blank"
