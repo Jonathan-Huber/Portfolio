@@ -11,7 +11,7 @@ function Hero() {
           <div className="lg:w-1/2">
             <h1 className="lg:text-7xl">Jonathan Huber</h1>
             <div className="w-12 h-1 bg-cyan-600 my-2 mx-auto lg:mx-0 rounded-full"></div>
-            <p className="subtitle">Intégrateur web / Front-end</p>
+            <h2 className="subtitle">Intégrateur web / Front-end</h2>
             <p>
               Passionné par le front-end, je crée des sites modernes et
               performants.

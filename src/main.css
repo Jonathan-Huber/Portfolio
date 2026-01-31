@@ -32,7 +32,7 @@
 @layer components {
   /* ===== Sous-titre Hero ===== */
   .subtitle {
-    @apply font-ui font-medium text-gray-900 text-lg md:text-2xl mb-2 leading-snug;
+    @apply font-ui lg:text-start font-medium text-gray-900 text-xl md:text-3xl mb-2 leading-snug;
   }
 
   /* ===== Boutons ===== */
