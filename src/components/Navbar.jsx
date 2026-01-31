@@ -7,7 +7,7 @@ function Navbar() {
   const links = [
     { href: "/", label: "Accueil" },
     { href: "/#projects", label: "Projets" },
-    { href: "/#skills", label: "Skills" },
+    { href: "/#skills", label: "Compétences" },
     { href: "/#about", label: "À propos" },
     { href: "/#parcours", label: "Parcours" },
     { href: "/#contact", label: "Contact" },
