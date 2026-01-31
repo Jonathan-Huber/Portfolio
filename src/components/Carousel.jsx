@@ -70,7 +70,7 @@ function Carousel({ images, projectTitle }) {
             onClick={() => setCurrentIndex(i)}
             aria-label={`Image ${i + 1} sur ${images.length}`}
             aria-current={i === currentIndex ? "true" : "false"}
-            className={`h-3 w-3 sm:h-4 sm:w-4 rounded-full transition ${
+            className={`h-4 w-4 sm:h-4 sm:w-4 rounded-full transition ${
               i === currentIndex ? "bg-cyan-600" : "bg-gray-300"
             }`}
           />
